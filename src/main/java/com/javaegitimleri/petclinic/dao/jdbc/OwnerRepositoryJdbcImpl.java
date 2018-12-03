@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.javaegitimleri.petclinic.dao.OwnerRepository;
 import com.javaegitimleri.petclinic.model.Owner;
 
-@Repository("ownerRepository")
+@Repository
 public class OwnerRepositoryJdbcImpl implements OwnerRepository {
 	
 	@Autowired
@@ -31,7 +31,7 @@ public class OwnerRepositoryJdbcImpl implements OwnerRepository {
 	};
 
 	@Override
-	public List<Owner> findAll() {
+		public List<Owner> findAll() {
 		String sql = "select id,first_name,last_name from t_owner";
 		
 		return jdbcTemplate.query(sql, rowMapper);
