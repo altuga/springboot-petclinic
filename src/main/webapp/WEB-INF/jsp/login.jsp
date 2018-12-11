@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>PetClinic Login Page</h1>
+<h1>PetClinic Login Page - Custom</h1>
 	<form action="login" method="post">
 		Username:<input name="username" type="text" /><br /> Password:<input
 			name="password" type="password" /><br /> <input
