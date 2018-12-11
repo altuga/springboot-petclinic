@@ -23,7 +23,7 @@ INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (11, 'Twetty', '2000-03-0
 INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (12, 'Tarçın', '2000-06-24', 8);
 INSERT INTO t_pet (id,name,birth_date,owner_id) VALUES (13, 'Sarı', '2002-06-08', 9);
 
-INSERT INTO USERS VALUES('user1','{noop}secret',TRUE);
+INSERT INTO USERS VALUES('user1','{noop}uysal',TRUE);
 INSERT INTO USERS VALUES('user2','{noop}secret',TRUE);
 INSERT INTO USERS VALUES('user3','{noop}secret',TRUE);
 
