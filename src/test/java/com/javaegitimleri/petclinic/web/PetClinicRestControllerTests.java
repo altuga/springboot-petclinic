@@ -52,7 +52,7 @@ public class PetClinicRestControllerTests {
 
 		List<String> firstNames = body.stream().map(e -> e.get("firstName")).collect(Collectors.toList());
 
-		MatcherAssert.assertThat(firstNames, Matchers.containsInAnyOrder("Kenan", "Hümeyra", "Salim"));
+		MatcherAssert.assertThat(firstNames, Matchers.containsInAnyOrder("Ziya", "Hümeyra", "Salim"));
 	}
 	
 	@Test
@@ -64,7 +64,7 @@ public class PetClinicRestControllerTests {
 		
 		List<String> firstNames = body.stream().map(e->e.get("firstName")).collect(Collectors.toList());
 		
-		MatcherAssert.assertThat(firstNames, Matchers.containsInAnyOrder("Kenan", "Hümeyra", "Salim", "Muammer"));
+		MatcherAssert.assertThat(firstNames, Matchers.containsInAnyOrder("Ziya", "Hümeyra", "Salim", "Muammer"));
 	}
 	
 	@Test
