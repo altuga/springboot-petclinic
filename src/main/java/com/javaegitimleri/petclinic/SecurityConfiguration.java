@@ -31,6 +31,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 		http.rememberMe().userDetailsService(userDetailsService);
 
+		http.csrf().disable();
+
 		http.httpBasic();
 	}
 

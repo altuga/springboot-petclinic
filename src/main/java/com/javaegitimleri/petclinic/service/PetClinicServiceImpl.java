@@ -64,8 +64,8 @@ public class PetClinicServiceImpl implements PetClinicService {
 		ownerRepository.create(owner);
 
 		SimpleMailMessage msg = new SimpleMailMessage();
-		msg.setFrom("k@s");
-		msg.setTo("m@y");
+		msg.setFrom("a@a");
+		msg.setTo("a@b");
 		msg.setSubject("Owner created!");
 		msg.setText("Owner entity with id :" + owner.getId() + " created successfully.");
 
