@@ -3,6 +3,7 @@ package com.javaegitimleri.petclinic.web;
 import java.net.URI;
 import java.util.List;
 
+import com.javaegitimleri.petclinic.model.Vet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;
@@ -65,6 +66,12 @@ public class PetClinicRestController {
 	public ResponseEntity<List<Owner>> getOwners(@RequestParam("ln") String lastName) {
 		List<Owner> owners = petClinicService.findOwners(lastName);
 		return ResponseEntity.ok(owners);
+	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/vets")
+	public ResponseEntity<List<Vet>> getVetsPlease() {
+		List<Vet> vets = petClinicService.findVets();
+		return ResponseEntity.ok(vets);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value = "/owner")
